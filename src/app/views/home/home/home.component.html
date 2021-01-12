@@ -14,8 +14,8 @@
         </mat-card-actions>
       </mat-card>
 </div> -->
-<div class=" margins">
-  <div class="formulario-cliente" style="margin-top: var(--margen-top-form)">
+<div class="margins-pesquisar">
+  <div class="pesquisar-card" style="margin-top: var(--margen-top-form)">
     <mat-form-field appearance="outline" class="responsividade">
       <mat-label>Pesquisar... </mat-label>
       <input
@@ -27,7 +27,7 @@
       <mat-hint
         ><small>
           <mat-label style="color: red">*</mat-label
-          ><span style="font-size: 10px"
+          ><span style="font-size: 13px"
             >Digite o nome do <strong>Pokémon</strong> para filtrar a
             informação.</span
           >
@@ -70,9 +70,9 @@
 
 </div>
 
-<div class="painelCards margins" >
+<div class="pesquisar-card margins-pesquisar" >
 
-  <div class="responsividade1 mat-elevation-z4 card-msg espaco-card" *ngIf="!mostarCard">
+  <div class="responsividade mat-elevation-z4 card-msg espaco-card" *ngIf="!mostarCard">
     <span> Nenhum pokémon encontrado para o paramentro passado.</span>
   </div>
 

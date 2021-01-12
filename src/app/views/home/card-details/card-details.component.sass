@@ -1,3 +1,6 @@
+.card-details
+    display: flex
+
 .margins
     margin-top: 30px
     margin-left: 30px
@@ -5,7 +8,7 @@
     margin-bottom: 30px
 
 .imagem-card
-        whith: 300px
+        max-width: 300px
         height: 600px
 
 .botoes
@@ -26,3 +29,27 @@
             font-family: var(--fonte-padrao)
             font-size: 20px
             color: var(--cor-padrao)
+
+@media screen and (max-width: 700px)
+
+    .card-details
+        display: flex
+        flex-direction: column
+        width: 100%
+        justify-content: center
+        align-items: center 
+
+    .imagem-card
+        width: 100%
+        height: auto
+
+    .card-info
+        width: 60%
+        height: auto
+        font-family: var( --fonte-padrao)
+        color: var(--cor-padrao)
+        padding: 20px 20px 20px 20px
+        margin-bottom: 20px
+        margin-top: 30px
+        margin-bottom: 30px
+
