@@ -14,12 +14,12 @@ import { FormsModule } from '@angular/forms';
 
 
 import { HomeService } from './home.service';
-import { ModalAtaqueComponent } from './modal/modal-ataque/modal-ataque.component';
+import { ModalAttackComponent } from './modal-attack/modal-attack.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, CardDetailsComponent, ModalAtaqueComponent],
+  declarations: [HomeComponent, CardDetailsComponent, ModalAttackComponent],
   imports: [
   CommonModule,
     HomeRoutingModule,
@@ -30,7 +30,7 @@ import { ModalAtaqueComponent } from './modal/modal-ataque/modal-ataque.componen
     MatInputModule,
     FormsModule,
     MatDialogModule
-  ], exports: [HomeComponent, CardDetailsComponent, ModalAtaqueComponent],
+  ], exports: [HomeComponent, CardDetailsComponent, ModalAttackComponent],
   providers: [HomeService]
 })
 export class HomeModule { }

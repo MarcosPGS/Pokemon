@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HomeService } from '../home.service';
 import { MatDialog } from '@angular/material/dialog';
-import { ModalAtaqueComponent } from '../modal/modal-ataque/modal-ataque.component';
+import { ModalAttackComponent } from '../modal-attack/modal-attack.component';
 
 @Component({
   selector: 'app-card-details',
@@ -35,7 +35,7 @@ buscarPorId(): void{
 }
 
 mostrarModalAtaque(ataque: any): void {
-  const dialogRef = this.dialog.open(ModalAtaqueComponent, {
+  const dialogRef = this.dialog.open(ModalAttackComponent, {
     data: {
       ...ataque,
     }
