@@ -11,6 +11,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
+// import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 import { HomeService } from './home.service';
@@ -29,7 +30,8 @@ import { ModalAttackComponent } from './modal-attack/modal-attack.component';
     MatGridListModule,
     MatInputModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    // MatCarouselModule.forRoot(),
   ], exports: [HomeComponent, CardDetailsComponent, ModalAttackComponent],
   providers: [HomeService]
 })
