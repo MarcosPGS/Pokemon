@@ -29,5 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Descrições
 
 Projeto foi desenvolvido com `Angular 10` e a biblioteca `Angular material`[Angular material](https://material.angular.io/)
-, consumindo a [API POKÉMON](https://api.pokemontcg.io/v1/cards).
+, consumindo a [API POKÉMON](https://pokemontcg.io/).
 
