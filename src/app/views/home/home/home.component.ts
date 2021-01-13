@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
       }
       this.nomePokemon = null;
       this.habilitarBotaoPesquisar = false;
-    }, error => {console.log(error);
+    }, error => {alert(error);
     });
   }
 
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
     this.homeService.listarTodosCards().subscribe((resp): void => {
       this.cards = resp.cards;
       this.cards.sort((a, b) => (a.name < b.name) ? -1 : 1);
-    });
+    }, error => {alert(error);});
   }
 
   pesquisar(): void {

@@ -30,7 +30,7 @@ buscarPorId(): void{
     this.cardBuscado = resp;
     this.ataques = resp.card.attacks;
   }, error => {
-    console.log(error);
+    alert(error);
   });
 }
 
