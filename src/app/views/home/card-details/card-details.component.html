@@ -7,8 +7,7 @@
         
         <div>
             <p><strong>ID:</strong> {{card.id}}</p>
-            <p><strong>Nome:</strong> {{card.name}}</p>
-            
+            <p><strong>Nome:</strong> {{card.name}}</p> 
         </div>
         <div *ngFor="let item of card.resistances">
             <p><strong>Resistencia(s):</strong></p>
@@ -22,7 +21,6 @@
                 <ul >
                     <li>Tipo: {{item.type}}  - Valor: {{item.value}}</li>
                 </ul>
-            
         </div>
 
         <div *ngFor="let item of card.types">
@@ -48,9 +46,6 @@
                 </ul>
             </div>
         </div>
-        
-
-        
         <div class="botoes margins">
             <button mat-raised-button
             color="accent"
