@@ -8,8 +8,10 @@ import { HomeComponent } from './home.component';
 import {RouterTestingModule} from '@angular/router/testing';
 import {FormsModule} from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { toBase64String } from '@angular/compiler/src/output/source_map';
 
 describe('HomeComponent', () => {
+  let service: HomeService;
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
@@ -33,6 +35,7 @@ describe('HomeComponent', () => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    service = TestBed.inject(HomeService);
   });
 
   it('should create', () => {
@@ -50,5 +53,8 @@ describe('HomeComponent', () => {
 
   it('deve buscar por nome', () => {
     expect(component.buscarPorNome()).toBe(undefined);
+  });
+  it('deve listar todos cards', () => {
+    expect(component.listarTodosCards()).toBe();
   });
 });

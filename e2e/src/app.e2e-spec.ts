@@ -1,16 +1,17 @@
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('Testes da página inicial', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
+  // /html/body/app-root/app-home/div[1]/div/mat-form-field/div/div[2]/div/mat-hint/small/span
 
-  it('should display welcome message', () => {
+  it('deve teste a fase em baixo do input de pesquisar', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('FrontEndChallenge app is running!');
+    expect(page.getTitleText()).toEqual('Digite o nome do Pokémon para filtrar a informação.');
   });
 
   afterEach(async () => {
