@@ -1,5 +1,6 @@
 .card-details
     display: flex
+    
 
 .margins
     margin-top: 30px
@@ -21,8 +22,8 @@
     height: 560px
     font-family: var( --fonte-padrao)
     color: var(--cor-padrao)
-    padding: 20px 20px 20px 20px
     margin-bottom: 20px
+    float: left
 
 .detalhes
         p
@@ -44,12 +45,48 @@
         height: auto
 
     .card-info
-        width: 85%
         height: auto
-        font-family: var( --fonte-padrao)
+        width: auto
+        font-family: var(--fonte-padrao)
         color: var(--cor-padrao)
-        padding: 20px 20px 20px 20px
         margin-bottom: 20px
         margin-top: 30px
-        margin-bottom: 30px
+        padding-bottom: 100px
+        margin-right: 0
+        padding-right: 100px
+        padding-left: 20px
+        padding-top: 20px
+@media screen and (min-width: 700px) and  (max-width: 1200px)
+    .card-details
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center 
 
+    .imagem-card
+        width: 100%
+        height: auto
+
+    .card-info
+        height: auto
+        width: 300px
+        font-family: var(--fonte-padrao)
+        color: var(--cor-padrao)
+        margin-bottom: 20px
+        margin-top: 30px
+        padding-bottom: 100px
+        margin-right: 0
+        padding-right: 100px
+        padding-left: 20px
+        padding-top: 20px
+    
+@media screen and (min-width: 1200px)
+
+    .card-info
+        height: 580px
+        font-family: var( --fonte-padrao)
+        color: var(--cor-padrao)
+        padding-left: 20px
+        padding-top: 20px
+        // padding: 20px 20px 20px 20px
+        
