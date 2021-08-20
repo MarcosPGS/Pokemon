@@ -1,0 +1,55 @@
+<div class="margins card-details" style="margin-bottom: 60px;">
+    <div class="">
+        <img class="imagem-card" src={{card.imageUrlHiRes}} alt={{card.name}}>
+    </div>
+
+    <div class=" detalhes mat-elevation-z4 card-info card espaco-card">
+        
+        <div>
+            <p><strong>ID:</strong> {{card.id}}</p>
+            <p><strong>Nome:</strong> {{card.name}}</p> 
+        </div>
+        <div *ngFor="let item of card.resistances">
+            <p><strong>Resistencia(s):</strong></p>
+                <ul>
+                    <li>Tipo: {{item.type}}  - Valor: {{item.value}}</li>
+                </ul>
+        </div>
+
+        <div *ngFor="let item of card.weaknesses">
+            <p><strong>Fraqueza(s):</strong>
+                <ul >
+                    <li>Tipo: {{item.type}}  - Valor: {{item.value}}</li>
+                </ul>
+        </div>
+
+        <div *ngFor="let item of card.types">
+            <p><strong>Tipo(s):</strong></p>
+            <ul >
+                <li>{{item}} </li>
+            </ul>
+        </div>
+    
+        <div >
+            <p><strong>Ataque(s):</strong></p>
+            <div *ngFor="let ataque of ataques">
+                <ul >
+                    <li>{{ataque.name}} 
+                        <button mat-mini-fab 
+                        color="primary"
+                        class="btn"
+                        (click)="mostrarModalAtaque(ataque)">
+                        <mat-icon>search</mat-icon>
+                    </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="botoes margins">
+            <button mat-raised-button
+            color="accent"
+            class="btn" (click)="voltar()">VOLTAR</button>
+        </div>
+    </div>
+
+</div>

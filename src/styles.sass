@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+html, body
+        height: 100%
+        font-family: "Futura LT Book", "Helvetica Neue", Helvetica, Arial, sans-serif
+:root
+    --cor-padrao: #1a237e
+    --cor-caixa-branca: #ffffff
+    --cor-200: #e8eaf6
+    --cor-400: #5c6bc0
+    --cor-cinza: #757575
+    --cor-accent: rgb(252, 45, 129)
+    --cor-ciano: #00B2A0
+    --cor-vermelha: #e96d82
+    --cor-titulo-pagina: rgba(0, 0, 0, 0.54)
+    --cor-titulo-card: rgba(0, 0, 0, 0.87)
+    /*Fonte padrão*/
+    --fonte-padrao: "Futura LT Book", "Helvetica Neue", Helvetica, Arial,sans-serif
+    --fonte-tamanho-padrao: 13px
+
+    /* Margens */
+    --margem-botao-padrao: 20px
+    --margen-top-form: 30px
+
+    /* Peso das fontes */
+    --fonte-regular: 400
+    --fonte-medium: 500
+    --fonte-bold: 700
+
+.painelCards
+   display: flex
+   flex-wrap: wrap
+   justify-content: space-between
+
+.pesquisar-card
+    display: flex
+
+.espaco-card
+    margin-right: 15px
+
+.responsividade
+    width: 100%
+
+.margins-pesquisar
+        padding: 20px 20px 20px 20px
+
+.responsividade-card
+    width: 20%
+
+.responsividade2
+    width: 50%
+
+.btn
+  width: 100px
+
+.margins
+    padding-left: 10px
+ 
+.tituloModal
+  font-weight: var(--fonte-regular)
+  font-family: var(--fonte-padrao)
+  color: var(--cor-padrao)
+
+@media screen and (max-width: 700px)
+    .painelCards
+        display: flex
+        flex-direction: column
+        width: 100%
+        justify-content: center
+        align-items: center 
+
+    .responsividade
+        width: 100%
+
+    .responsividade1
+        width: auto
+
+    .responsividade2
+        width: auto
+        
+    .responsividade-card
+        width: auto
+   
+    .margins
+        padding-left: 0px

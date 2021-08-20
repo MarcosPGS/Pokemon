@@ -1,0 +1,62 @@
+
+<div class="margins-pesquisar">
+  <div class="pesquisar-card" style="margin-top: var(--margen-top-form)">
+    <mat-form-field appearance="outline" class="responsividade">
+      <mat-label>Pesquisar... </mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="nomePokemon"
+        (ngModelChange)="pesquisar()"
+      />
+      <mat-hint
+        ><small>
+          <mat-label style="color: red">*</mat-label
+          ><span style="font-size: 13px"
+            >Digite o nome do <strong>Pokémon</strong> para filtrar a
+            informação.</span
+          >
+        </small></mat-hint
+      >
+    </mat-form-field>
+  </div>
+  <!-- <div style="text-align: end" *ngIf="habilitarBotaoPesquisar">
+    <button
+      mat-raised-button
+      color="primary"
+      class="btn"
+      (click)="buscarPorNome()"
+    >
+      <mat-icon>search</mat-icon>
+    </button>
+  </div> -->
+</div>
+
+<div class="painelCards margins" *ngIf="mostarCard">
+
+  <div class="responsividade1 mat-elevation-z4 card-info espaco-card" *ngFor="let card of cards">
+    <div class="titulo">
+      <span>{{card.name}}</span>
+    </div>
+    <div class="sub-titulo">
+      <span>{{card.id}}</span>
+    </div>
+
+    <img class="imagem-card" src={{card.imageUrl}} alt={{card.name}} >
+
+    <div style="text-align: end;">
+      <button mat-raised-button
+      color="accent"
+      class="btn"
+      (click)="detalhar(card)">DETALHAR</button>
+    </div>
+  </div>
+</div>
+
+<div class="pesquisar-card margins-pesquisar" >
+  <div class="responsividade mat-elevation-z4 card-msg espaco-card" *ngIf="!mostarCard">
+    <span> Nenhum pokémon encontrado para o paramentro passado.</span>
+  </div>
+</div>
+
+

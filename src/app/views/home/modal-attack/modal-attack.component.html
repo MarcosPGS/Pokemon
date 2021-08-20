@@ -1,0 +1,25 @@
+<h2 mat-dialog-title class="tituloModal">Detalhe do ataque</h2>
+<mat-dialog-content class="mat-typography">
+  <span>Especificações do ataque <strong>Pokémon</strong>  abaixo:</span>
+  <ul>
+    <li>
+        Custo de “mana”:
+        {{ ataque.cost}}
+      </li>
+    <li>
+      Nome:
+      {{ ataque.name}}
+    </li>
+    <li>
+        Dano:
+        {{ ataque.damage}}
+      </li>
+      <li i18n>
+        Descrição:
+        {{ ataque.text}}
+      </li>
+  </ul>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button mat-dialog-close color="accent" class="btn" style="color: var( --cor-caixa-branca);">VOLTAR</button>
+</mat-dialog-actions>
